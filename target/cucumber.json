@@ -1,0 +1,129 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-13T20:40:17.500Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2376000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.webrestaurantstore.Step_Definations.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Search Product",
+        "description": "",
+        "id": "empty-cart;search-product;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 121000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.webrestaurantstore.Step_Definations.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2365000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on \"URL1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"URL1\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.webrestaurantstore.Step_Definations.Empty_Cart_StepDef.userIsOn(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1988000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user search for \"Stainless Steal Table\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Stainless Steal Table\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.webrestaurantstore.Step_Definations.Empty_Cart_StepDef.userSearchFor(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22482000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user verify results that every product titles has \"Table\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Table\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.webrestaurantstore.Step_Definations.Empty_Cart_StepDef.userVerifyResultsThatEveryProductTitlesHas(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 198000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user adds last items to Cart",
+            "match": {
+              "location": "com.webrestaurantstore.Step_Definations.Empty_Cart_StepDef.userAddsLastItemsToCart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4390000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on Empty Cart",
+            "match": {
+              "location": "com.webrestaurantstore.Step_Definations.Empty_Cart_StepDef.userClicksOnEmptyCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search"
+          }
+        ]
+      }
+    ],
+    "name": "Empty_Cart",
+    "description": "",
+    "id": "empty-cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Empty_Cart.feature",
+    "tags": []
+  }
+]
