@@ -73,7 +73,9 @@ public class Empty_Cart_Actions extends Base_Page{
                     missingTittle.add(productTitle);
                 }
             }
-           // System.out.println("Product doesn't have "+Word+" on Title ==> "+missingTittle);
+
+            //System.out.println("Product doesn't have "+Word+" on Title ==> "+missingTittle);
+
             if (missingTittle.size()>0){
                 System.out.println("Not all the product title contains "+Word);
             }else{
@@ -84,10 +86,7 @@ public class Empty_Cart_Actions extends Base_Page{
                 goToPage(nextPage);
             }
 
-
         }
-
-
 
 
     }
@@ -100,8 +99,6 @@ public class Empty_Cart_Actions extends Base_Page{
         lastItemTitle=Element.productList.get(Element.productList.size()-1).getText();
         System.out.println("Last Item is ====>>>>"+lastItemTitle);
         Element.addItemToCart.get(itemSize - 1).click();
-       // Element.addItemToCartOnPopup.click();
-
 
     }
 
@@ -122,7 +119,6 @@ public class Empty_Cart_Actions extends Base_Page{
 
         new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(Element.emptyCartBtn)).click();
 
-
         new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(Element.emptyCartPopUpBtn)).click();
 
         String EmptyCartHeader ="Your cart is empty.";
@@ -136,8 +132,6 @@ public class Empty_Cart_Actions extends Base_Page{
 
 
     }
-
-
 
 
 }
